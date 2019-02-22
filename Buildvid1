@@ -1,0 +1,8 @@
+docker stop tomcat
+docker rm tomcat
+docker run -it -d -p 80:8080 --restart always --name tomcat  tomcat:8.0
+sleep 5
+docker exec -i tomcat bash < Build2.sh
+~                                                                                                                                                                                                                                                                                                                           
+~                                                                                                                                                                                  
+"Buildvid1" 5L, 155C
